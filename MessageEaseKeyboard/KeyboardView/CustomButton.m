@@ -18,7 +18,7 @@
         self.layer.borderWidth = 1;
 
         [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [self setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+        [self setTitleColor:[UIColor orangeColor] forState:UIControlStateHighlighted];
     }
 
     return self;

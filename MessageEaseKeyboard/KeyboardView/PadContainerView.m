@@ -11,6 +11,7 @@
 
 #import <Masonry/Masonry.h>
 #import "KeyManager.h"
+#import "KeyboardManager.h"
 
 static NSInteger kPadCount = 9;
 static NSInteger kPadPerRow = 3;
@@ -56,6 +57,7 @@ static NSInteger kPadPerRow = 3;
     self.pads = pads;
 }
 
+#pragma mark - Constraints
 - (void)updateConstraints
 {
     for (int i=0; i<self.pads.count; ++i) {

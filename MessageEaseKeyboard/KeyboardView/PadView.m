@@ -10,12 +10,29 @@
 #import "CustomLabel.h"
 
 #import <Masonry/Masonry.h>
+#import "KeyboardManager.h"
 
 static NSInteger kPadding = 4;
+
+typedef NS_ENUM(NSUInteger, Direction) {
+    DirectionTopLeft,
+    DirectionTop,
+    DirectionTopRight,
+    DirectionLeft,
+    DirectionMiddle,
+    DirectionRight,
+    DirectionBottomLeft,
+    DirectionBottom,
+    DirectionBottomRight,
+    DirectionUnknown,
+};
 
 @interface PadView ()
 
 @property (nonatomic, strong) NSArray *labels;
+@property (nonatomic, strong) UITapGestureRecognizer *tapGR;
+@property (nonatomic, strong) UIPanGestureRecognizer *panGR;
+@property (nonatomic, strong) NSString *previousKey;
 
 @end
 
@@ -46,6 +63,7 @@ static NSInteger kPadding = 4;
 - (void)setup
 {
     [self setupLabels];
+    [self setupGR];
 }
 
 - (void)setupLabels
@@ -127,20 +145,91 @@ static NSInteger kPadding = 4;
                     bottomLeftLabel, bottomLabel, bottomRightLabel];
 }
 
+- (void)setupGR
+{
+    self.tapGR = [[UITapGestureRecognizer alloc] init];
+    [self.tapGR addTarget:self action:@selector(viewTapped:)];
+    [self addGestureRecognizer:self.tapGR];
+
+    self.panGR = [[UIPanGestureRecognizer alloc] init];
+    [self.panGR addTarget:self action:@selector(viewPanned:)];
+    [self addGestureRecognizer:self.panGR];
+}
+
+#pragma mark - GR
+- (void)viewTapped:(id)sender
+{
+    UILabel *label = self.labels[DirectionMiddle];
+    [[KeyboardManager sharedManager] handleKey:label.text];
+}
+
+- (void)viewPanned:(UIPanGestureRecognizer *)panGR
+{
+    CGPoint translation = [panGR translationInView:self];
+
+    CGFloat threshold = self.bounds.size.width/2;
+
+    // Detect
+    Direction direction = DirectionUnknown;
+
+    if (translation.x > threshold) {
+        if (translation.y > threshold) {
+            direction = DirectionBottomRight;
+        } else if (translation.y < -threshold) {
+            direction = DirectionTopRight;
+        } else {
+            direction = DirectionRight;
+        }
+    } else if (translation.x < -threshold) {
+        if (translation.y > threshold) {
+            direction = DirectionBottomLeft;
+        } else if (translation.y < -threshold) {
+            direction = DirectionTopLeft;
+        } else {
+            direction = DirectionLeft;
+        }
+    } else {
+        if (translation.y > threshold) {
+            direction = DirectionBottom;
+        } else if (translation.y < -threshold) {
+            direction = DirectionTop;
+        }
+    }
+
+    if (direction != DirectionUnknown) {
+        UILabel *label = self.labels[direction];
+
+        if ([label.text isEqualToString:self.previousKey]) {
+            return;
+        } else {
+            [[KeyboardManager sharedManager] handleKey:label.text];
+            self.previousKey = label.text;
+        }
+    }
+
+    // Forget the previous key
+    if (panGR.state == UIGestureRecognizerStateRecognized ||
+        panGR.state == UIGestureRecognizerStateCancelled ||
+        panGR.state == UIGestureRecognizerStateEnded) {
+        self.previousKey = nil;
+    }
+
+}
+
 #pragma mark - Touch
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    self.backgroundColor = [UIColor grayColor];
+    self.backgroundColor = [UIColor orangeColor];
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    self.backgroundColor = [UIColor whiteColor];
+    self.backgroundColor = [UIColor clearColor];
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    self.backgroundColor = [UIColor whiteColor];
+    self.backgroundColor = [UIColor clearColor];
 }
 
 @end

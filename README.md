@@ -1,7 +1,8 @@
 MessageEase
 =========
-Learn how to make custom keyboard extension
+Learn to make custom keyboard extension, replicating MessageEase
 
+![](http://i60.tinypic.com/2lm8ig8.png)
 
 License
 --

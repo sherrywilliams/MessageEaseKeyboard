@@ -69,15 +69,15 @@
 		<string>]</string>
 	</array>
 	<array>
-		<string></string>
-		<string>{</string>
-		<string></string>
+		<string>~</string>
+		<string>..</string>
 		<string>y</string>
 		<string>&lt;</string>
 		<string>t</string>
 		<string>*</string>
 		<string></string>
 		<string></string>
+        <string></string>
 	</array>
     <array>
         <string>"</string>

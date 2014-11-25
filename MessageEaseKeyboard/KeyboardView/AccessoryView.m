@@ -10,6 +10,8 @@
 #import <Masonry/Masonry.h>
 #import "CustomButton.h"
 
+#import "KeyboardManager.h"
+
 @interface AccessoryView ()
 
 @property (nonatomic, strong) CustomButton *nextKeyboardButton;
@@ -88,12 +90,12 @@
 #pragma mark - Action
 - (void)gotoNextKeyboard:(id)sender
 {
-
+    [[KeyboardManager sharedManager] advanceToNextInputMode];
 }
 
 - (void)dismissKeyboard:(id)sender
 {
-
+    [[KeyboardManager sharedManager] dismissKeyboard];
 }
 
 - (void)changeMode:(id)sender
