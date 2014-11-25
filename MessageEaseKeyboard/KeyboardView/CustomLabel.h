@@ -1,5 +1,5 @@
 //
-//  PadView.h
+//  CustomLabel.h
 //  MessageEase
 //
 //  Created by Khoa Pham on 11/25/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PadView : UIView
-
-- (void)setTexts:(NSArray *)texts;
+@interface CustomLabel : UILabel
 
 @end
