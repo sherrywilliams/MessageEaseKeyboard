@@ -16,6 +16,10 @@
 		99A3163F1A24392600159958 /* MessageEaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A3163E1A24392600159958 /* MessageEaseTests.m */; };
 		99A316521A24393E00159958 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A316511A24393E00159958 /* KeyboardViewController.m */; };
 		99A316551A24393E00159958 /* MessageEaseKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 99A3164C1A24393E00159958 /* MessageEaseKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		99A3165C1A2440D900159958 /* PadContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A3165B1A2440D900159958 /* PadContainerView.m */; };
+		99A3165F1A2440E800159958 /* AccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A3165E1A2440E800159958 /* AccessoryView.m */; };
+		99A316621A2440F000159958 /* PadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A316611A2440F000159958 /* PadView.m */; };
+		DE32742F8F7604478C3D0E4E /* libPods-MessageEaseKeyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B238506919AEB9186AF8597 /* libPods-MessageEaseKeyboard.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B238506919AEB9186AF8597 /* libPods-MessageEaseKeyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MessageEaseKeyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39436C89927C300689639502 /* Pods-MessageEaseKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageEaseKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessageEaseKeyboard/Pods-MessageEaseKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		4DB9D8CF51180CAB0AE2952A /* Pods-MessageEaseKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageEaseKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessageEaseKeyboard/Pods-MessageEaseKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 		99A3161F1A24392500159958 /* MessageEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A316231A24392500159958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99A316241A24392500159958 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,6 +74,12 @@
 		99A3164F1A24393E00159958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99A316501A24393E00159958 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
 		99A316511A24393E00159958 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		99A3165A1A2440D900159958 /* PadContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PadContainerView.h; sourceTree = "<group>"; };
+		99A3165B1A2440D900159958 /* PadContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PadContainerView.m; sourceTree = "<group>"; };
+		99A3165D1A2440E800159958 /* AccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessoryView.h; sourceTree = "<group>"; };
+		99A3165E1A2440E800159958 /* AccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessoryView.m; sourceTree = "<group>"; };
+		99A316601A2440F000159958 /* PadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PadView.h; sourceTree = "<group>"; };
+		99A316611A2440F000159958 /* PadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PadView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +101,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE32742F8F7604478C3D0E4E /* libPods-MessageEaseKeyboard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89CECEA994C3670A6D26812B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39436C89927C300689639502 /* Pods-MessageEaseKeyboard.debug.xcconfig */,
+				4DB9D8CF51180CAB0AE2952A /* Pods-MessageEaseKeyboard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		99A316161A24392500159958 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +124,8 @@
 				99A3163B1A24392600159958 /* MessageEaseTests */,
 				99A3164D1A24393E00159958 /* MessageEaseKeyboard */,
 				99A316201A24392500159958 /* Products */,
+				89CECEA994C3670A6D26812B /* Pods */,
+				DE21D526F4C6B1EBBAD802C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +186,12 @@
 				99A316501A24393E00159958 /* KeyboardViewController.h */,
 				99A316511A24393E00159958 /* KeyboardViewController.m */,
 				99A3164E1A24393E00159958 /* Supporting Files */,
+				99A3165A1A2440D900159958 /* PadContainerView.h */,
+				99A3165B1A2440D900159958 /* PadContainerView.m */,
+				99A3165D1A2440E800159958 /* AccessoryView.h */,
+				99A3165E1A2440E800159958 /* AccessoryView.m */,
+				99A316601A2440F000159958 /* PadView.h */,
+				99A316611A2440F000159958 /* PadView.m */,
 			);
 			path = MessageEaseKeyboard;
 			sourceTree = "<group>";
@@ -171,6 +202,14 @@
 				99A3164F1A24393E00159958 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE21D526F4C6B1EBBAD802C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B238506919AEB9186AF8597 /* libPods-MessageEaseKeyboard.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,9 +256,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99A316561A24393F00159958 /* Build configuration list for PBXNativeTarget "MessageEaseKeyboard" */;
 			buildPhases = (
+				E1712E331D59C1317E62B8C5 /* Check Pods Manifest.lock */,
 				99A316481A24393E00159958 /* Sources */,
 				99A316491A24393E00159958 /* Frameworks */,
 				99A3164A1A24393E00159958 /* Resources */,
+				423095D61F287D4E24D2E201 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -298,6 +339,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		423095D61F287D4E24D2E201 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MessageEaseKeyboard/Pods-MessageEaseKeyboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1712E331D59C1317E62B8C5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		99A3161B1A24392500159958 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -321,6 +395,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A316621A2440F000159958 /* PadView.m in Sources */,
+				99A3165F1A2440E800159958 /* AccessoryView.m in Sources */,
+				99A3165C1A2440D900159958 /* PadContainerView.m in Sources */,
 				99A316521A24393E00159958 /* KeyboardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +569,7 @@
 		};
 		99A316571A24393F00159958 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39436C89927C300689639502 /* Pods-MessageEaseKeyboard.debug.xcconfig */;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -506,6 +584,7 @@
 		};
 		99A316581A24393F00159958 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DB9D8CF51180CAB0AE2952A /* Pods-MessageEaseKeyboard.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = MessageEaseKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -533,6 +612,7 @@
 				99A316441A24392600159958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99A316451A24392600159958 /* Build configuration list for PBXNativeTarget "MessageEaseTests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +621,7 @@
 				99A316471A24392600159958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99A316561A24393F00159958 /* Build configuration list for PBXNativeTarget "MessageEaseKeyboard" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +630,7 @@
 				99A316581A24393F00159958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
