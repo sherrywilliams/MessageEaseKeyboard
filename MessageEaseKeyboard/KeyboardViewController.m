@@ -7,16 +7,15 @@
 //
 
 #import "KeyboardViewController.h"
-#import "PadContainerView.h"
-#import "AccessoryView.h"
+#import "KeyboardView.h"
 
 #import <Masonry/Masonry.h>
 
 @interface KeyboardViewController ()
 
+@property (nonatomic, strong) KeyboardView *keyboardView;
 @property (nonatomic, strong) UIButton *nextKeyboardButton;
-@property (nonatomic, strong) PadContainerView *padContainerView;
-@property (nonatomic, strong) AccessoryView *accessoryView;
+
 
 @end
 
@@ -25,8 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self setupPadContainerView];
-    [self setupAccessoryView];
+    [self setupKeyboardView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,6 +40,16 @@
 }
 
 #pragma mark - Setup
+- (void)setupKeyboardView
+{
+    self.keyboardView = [[KeyboardView alloc] init];
+    [self.view addSubview:self.keyboardView];
+
+    [self.keyboardView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+}
+
 - (void)setupNextKeyboardButton
 {
     // Perform custom UI setup here
@@ -59,34 +67,6 @@
     NSLayoutConstraint *nextKeyboardButtonBottomConstraint = [NSLayoutConstraint constraintWithItem:self.nextKeyboardButton attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0];
     [self.view addConstraints:@[nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint]];
 
-}
-
-- (void)setupPadContainerView
-{
-    self.padContainerView = [[PadContainerView alloc] init];
-    self.padContainerView.backgroundColor = [UIColor yellowColor];
-    [self.view addSubview:self.padContainerView];
-
-    [self.padContainerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view.mas_top);
-        make.left.equalTo(self.view.mas_left);
-        make.bottom.equalTo(self.view.mas_bottom);
-        make.width.equalTo(self.padContainerView.mas_height);
-    }];
-}
-
-- (void)setupAccessoryView
-{
-    self.accessoryView = [[AccessoryView alloc] init];
-    self.accessoryView.backgroundColor = [UIColor greenColor];
-    [self.view addSubview:self.accessoryView];
-
-    [self.accessoryView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view.mas_top);
-        make.left.equalTo(self.padContainerView.mas_right);
-        make.bottom.equalTo(self.view.mas_bottom);
-        make.right.equalTo(self.view.mas_right);
-    }];
 }
 
 #pragma mark - Text
