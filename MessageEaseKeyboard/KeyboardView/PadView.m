@@ -18,6 +18,8 @@
 {
     self = [super init];
     if (self) {
+        self.layer.borderColor = [UIColor darkGrayColor].CGColor;
+        self.layer.borderWidth = 1;
         [self setup];
     }
 

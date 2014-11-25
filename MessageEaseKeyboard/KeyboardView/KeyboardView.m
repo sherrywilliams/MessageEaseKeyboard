@@ -25,6 +25,8 @@
 {
     self = [super init];
     if (self) {
+        self.layer.borderColor = [UIColor darkGrayColor].CGColor;
+        self.layer.borderWidth = 1;
         [self setup];
     }
 
@@ -41,21 +43,19 @@
 - (void)setupPadContainerView
 {
     self.padContainerView = [[PadContainerView alloc] init];
-    self.padContainerView.backgroundColor = [UIColor yellowColor];
     [self addSubview:self.padContainerView];
 
     [self.padContainerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mas_top);
         make.left.equalTo(self.mas_left);
-        make.bottom.equalTo(self.mas_bottom);
-        make.width.equalTo(self.padContainerView.mas_height);
+        make.height.equalTo(self.mas_height);
+        make.width.equalTo(self.mas_height);
     }];
 }
 
 - (void)setupAccessoryView
 {
     self.accessoryView = [[AccessoryView alloc] init];
-    self.accessoryView.backgroundColor = [UIColor greenColor];
     [self addSubview:self.accessoryView];
 
     [self.accessoryView mas_makeConstraints:^(MASConstraintMaker *make) {

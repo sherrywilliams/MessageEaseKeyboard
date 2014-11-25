@@ -24,6 +24,8 @@
 		99D59F691A2459E5006D9447 /* PadContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D59F611A2459E5006D9447 /* PadContainerView.m */; };
 		99D59F6A1A2459E5006D9447 /* PadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D59F631A2459E5006D9447 /* PadView.m */; };
 		99D59F6B1A2459E5006D9447 /* PadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D59F631A2459E5006D9447 /* PadView.m */; };
+		99D59F6E1A246EC8006D9447 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D59F6D1A246EC8006D9447 /* CustomButton.m */; };
+		99D59F6F1A246EC8006D9447 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D59F6D1A246EC8006D9447 /* CustomButton.m */; };
 		BC10C17496411900C5C18577 /* libPods-MessageEase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE792BDF01ABB3AD697B5CB0 /* libPods-MessageEase.a */; };
 		DE32742F8F7604478C3D0E4E /* libPods-MessageEaseKeyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B238506919AEB9186AF8597 /* libPods-MessageEaseKeyboard.a */; };
 /* End PBXBuildFile section */
@@ -90,6 +92,8 @@
 		99D59F611A2459E5006D9447 /* PadContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PadContainerView.m; sourceTree = "<group>"; };
 		99D59F621A2459E5006D9447 /* PadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PadView.h; sourceTree = "<group>"; };
 		99D59F631A2459E5006D9447 /* PadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PadView.m; sourceTree = "<group>"; };
+		99D59F6C1A246EC8006D9447 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		99D59F6D1A246EC8006D9447 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 		CE792BDF01ABB3AD697B5CB0 /* libPods-MessageEase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MessageEase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -224,6 +228,8 @@
 				99D59F611A2459E5006D9447 /* PadContainerView.m */,
 				99D59F621A2459E5006D9447 /* PadView.h */,
 				99D59F631A2459E5006D9447 /* PadView.m */,
+				99D59F6C1A246EC8006D9447 /* CustomButton.h */,
+				99D59F6D1A246EC8006D9447 /* CustomButton.m */,
 			);
 			path = KeyboardView;
 			sourceTree = "<group>";
@@ -434,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99D59F6E1A246EC8006D9447 /* CustomButton.m in Sources */,
 				99D59F681A2459E5006D9447 /* PadContainerView.m in Sources */,
 				99A3162B1A24392500159958 /* ViewController.m in Sources */,
 				99D59F641A2459E5006D9447 /* AccessoryView.m in Sources */,
@@ -456,6 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99D59F6F1A246EC8006D9447 /* CustomButton.m in Sources */,
 				99D59F691A2459E5006D9447 /* PadContainerView.m in Sources */,
 				99D59F671A2459E5006D9447 /* KeyboardView.m in Sources */,
 				99A316521A24393E00159958 /* KeyboardViewController.m in Sources */,
