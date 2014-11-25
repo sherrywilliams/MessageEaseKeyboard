@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99A316251A24392500159958 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A316241A24392500159958 /* main.m */; };
+		99A316281A24392500159958 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A316271A24392500159958 /* AppDelegate.m */; };
+		99A3162B1A24392500159958 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A3162A1A24392500159958 /* ViewController.m */; };
+		99A3162E1A24392500159958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A3162C1A24392500159958 /* Main.storyboard */; };
+		99A316301A24392500159958 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A3162F1A24392500159958 /* Images.xcassets */; };
+		99A316331A24392500159958 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A316311A24392500159958 /* LaunchScreen.xib */; };
+		99A3163F1A24392600159958 /* MessageEaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A3163E1A24392600159958 /* MessageEaseTests.m */; };
+		99A316521A24393E00159958 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A316511A24393E00159958 /* KeyboardViewController.m */; };
+		99A316551A24393E00159958 /* MessageEaseKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 99A3164C1A24393E00159958 /* MessageEaseKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99A316391A24392600159958 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99A316171A24392500159958 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99A3161E1A24392500159958;
+			remoteInfo = MessageEase;
+		};
+		99A316531A24393E00159958 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99A316171A24392500159958 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99A3164B1A24393E00159958;
+			remoteInfo = MessageEaseKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99A316591A24393F00159958 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				99A316551A24393E00159958 /* MessageEaseKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		99A3161F1A24392500159958 /* MessageEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A316231A24392500159958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A316241A24392500159958 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		99A316261A24392500159958 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		99A316271A24392500159958 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		99A316291A24392500159958 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		99A3162A1A24392500159958 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		99A3162D1A24392500159958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99A3162F1A24392500159958 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		99A316321A24392500159958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		99A316381A24392600159958 /* MessageEaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageEaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A3163D1A24392600159958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A3163E1A24392600159958 /* MessageEaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageEaseTests.m; sourceTree = "<group>"; };
+		99A3164C1A24393E00159958 /* MessageEaseKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessageEaseKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A3164F1A24393E00159958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A316501A24393E00159958 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		99A316511A24393E00159958 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99A3161C1A24392500159958 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A316351A24392600159958 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A316491A24393E00159958 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99A316161A24392500159958 = {
+			isa = PBXGroup;
+			children = (
+				99A316211A24392500159958 /* MessageEase */,
+				99A3163B1A24392600159958 /* MessageEaseTests */,
+				99A3164D1A24393E00159958 /* MessageEaseKeyboard */,
+				99A316201A24392500159958 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99A316201A24392500159958 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99A3161F1A24392500159958 /* MessageEase.app */,
+				99A316381A24392600159958 /* MessageEaseTests.xctest */,
+				99A3164C1A24393E00159958 /* MessageEaseKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99A316211A24392500159958 /* MessageEase */ = {
+			isa = PBXGroup;
+			children = (
+				99A316261A24392500159958 /* AppDelegate.h */,
+				99A316271A24392500159958 /* AppDelegate.m */,
+				99A316291A24392500159958 /* ViewController.h */,
+				99A3162A1A24392500159958 /* ViewController.m */,
+				99A3162C1A24392500159958 /* Main.storyboard */,
+				99A3162F1A24392500159958 /* Images.xcassets */,
+				99A316311A24392500159958 /* LaunchScreen.xib */,
+				99A316221A24392500159958 /* Supporting Files */,
+			);
+			path = MessageEase;
+			sourceTree = "<group>";
+		};
+		99A316221A24392500159958 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99A316231A24392500159958 /* Info.plist */,
+				99A316241A24392500159958 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99A3163B1A24392600159958 /* MessageEaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				99A3163E1A24392600159958 /* MessageEaseTests.m */,
+				99A3163C1A24392600159958 /* Supporting Files */,
+			);
+			path = MessageEaseTests;
+			sourceTree = "<group>";
+		};
+		99A3163C1A24392600159958 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99A3163D1A24392600159958 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99A3164D1A24393E00159958 /* MessageEaseKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				99A316501A24393E00159958 /* KeyboardViewController.h */,
+				99A316511A24393E00159958 /* KeyboardViewController.m */,
+				99A3164E1A24393E00159958 /* Supporting Files */,
+			);
+			path = MessageEaseKeyboard;
+			sourceTree = "<group>";
+		};
+		99A3164E1A24393E00159958 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99A3164F1A24393E00159958 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99A3161E1A24392500159958 /* MessageEase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99A316421A24392600159958 /* Build configuration list for PBXNativeTarget "MessageEase" */;
+			buildPhases = (
+				99A3161B1A24392500159958 /* Sources */,
+				99A3161C1A24392500159958 /* Frameworks */,
+				99A3161D1A24392500159958 /* Resources */,
+				99A316591A24393F00159958 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99A316541A24393E00159958 /* PBXTargetDependency */,
+			);
+			name = MessageEase;
+			productName = MessageEase;
+			productReference = 99A3161F1A24392500159958 /* MessageEase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99A316371A24392600159958 /* MessageEaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99A316451A24392600159958 /* Build configuration list for PBXNativeTarget "MessageEaseTests" */;
+			buildPhases = (
+				99A316341A24392600159958 /* Sources */,
+				99A316351A24392600159958 /* Frameworks */,
+				99A316361A24392600159958 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99A3163A1A24392600159958 /* PBXTargetDependency */,
+			);
+			name = MessageEaseTests;
+			productName = MessageEaseTests;
+			productReference = 99A316381A24392600159958 /* MessageEaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99A3164B1A24393E00159958 /* MessageEaseKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99A316561A24393F00159958 /* Build configuration list for PBXNativeTarget "MessageEaseKeyboard" */;
+			buildPhases = (
+				99A316481A24393E00159958 /* Sources */,
+				99A316491A24393E00159958 /* Frameworks */,
+				99A3164A1A24393E00159958 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageEaseKeyboard;
+			productName = MessageEaseKeyboard;
+			productReference = 99A3164C1A24393E00159958 /* MessageEaseKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99A316171A24392500159958 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Fantageek;
+				TargetAttributes = {
+					99A3161E1A24392500159958 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					99A316371A24392600159958 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 99A3161E1A24392500159958;
+					};
+					99A3164B1A24393E00159958 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 99A3161A1A24392500159958 /* Build configuration list for PBXProject "MessageEase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99A316161A24392500159958;
+			productRefGroup = 99A316201A24392500159958 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99A3161E1A24392500159958 /* MessageEase */,
+				99A316371A24392600159958 /* MessageEaseTests */,
+				99A3164B1A24393E00159958 /* MessageEaseKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99A3161D1A24392500159958 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99A3162E1A24392500159958 /* Main.storyboard in Resources */,
+				99A316331A24392500159958 /* LaunchScreen.xib in Resources */,
+				99A316301A24392500159958 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A316361A24392600159958 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A3164A1A24393E00159958 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99A3161B1A24392500159958 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99A3162B1A24392500159958 /* ViewController.m in Sources */,
+				99A316281A24392500159958 /* AppDelegate.m in Sources */,
+				99A316251A24392500159958 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A316341A24392600159958 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99A3163F1A24392600159958 /* MessageEaseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A316481A24393E00159958 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99A316521A24393E00159958 /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99A3163A1A24392600159958 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99A3161E1A24392500159958 /* MessageEase */;
+			targetProxy = 99A316391A24392600159958 /* PBXContainerItemProxy */;
+		};
+		99A316541A24393E00159958 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99A3164B1A24393E00159958 /* MessageEaseKeyboard */;
+			targetProxy = 99A316531A24393E00159958 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99A3162C1A24392500159958 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99A3162D1A24392500159958 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99A316311A24392500159958 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99A316321A24392500159958 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99A316401A24392600159958 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		99A316411A24392600159958 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99A316431A24392600159958 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MessageEase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		99A316441A24392600159958 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MessageEase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		99A316461A24392600159958 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MessageEaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MessageEase.app/MessageEase";
+			};
+			name = Debug;
+		};
+		99A316471A24392600159958 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MessageEaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MessageEase.app/MessageEase";
+			};
+			name = Release;
+		};
+		99A316571A24393F00159958 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MessageEaseKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		99A316581A24393F00159958 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MessageEaseKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99A3161A1A24392500159958 /* Build configuration list for PBXProject "MessageEase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99A316401A24392600159958 /* Debug */,
+				99A316411A24392600159958 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99A316421A24392600159958 /* Build configuration list for PBXNativeTarget "MessageEase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99A316431A24392600159958 /* Debug */,
+				99A316441A24392600159958 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		99A316451A24392600159958 /* Build configuration list for PBXNativeTarget "MessageEaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99A316461A24392600159958 /* Debug */,
+				99A316471A24392600159958 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		99A316561A24393F00159958 /* Build configuration list for PBXNativeTarget "MessageEaseKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99A316571A24393F00159958 /* Debug */,
+				99A316581A24393F00159958 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99A316171A24392500159958 /* Project object */;
+}
