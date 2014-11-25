@@ -28,6 +28,10 @@
 		99D59F6F1A246EC8006D9447 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D59F6D1A246EC8006D9447 /* CustomButton.m */; };
 		99D59F721A24B7B4006D9447 /* CustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D59F711A24B7B4006D9447 /* CustomLabel.m */; };
 		99D59F731A24B7B4006D9447 /* CustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D59F711A24B7B4006D9447 /* CustomLabel.m */; };
+		99D59F751A24BAD4006D9447 /* primary_keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99D59F741A24BAD4006D9447 /* primary_keys.plist */; };
+		99D59F761A24BAD4006D9447 /* primary_keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99D59F741A24BAD4006D9447 /* primary_keys.plist */; };
+		99D59F791A24BB41006D9447 /* KeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D59F781A24BB41006D9447 /* KeyManager.m */; };
+		99D59F7A1A24BB41006D9447 /* KeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D59F781A24BB41006D9447 /* KeyManager.m */; };
 		BC10C17496411900C5C18577 /* libPods-MessageEase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE792BDF01ABB3AD697B5CB0 /* libPods-MessageEase.a */; };
 		DE32742F8F7604478C3D0E4E /* libPods-MessageEaseKeyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B238506919AEB9186AF8597 /* libPods-MessageEaseKeyboard.a */; };
 /* End PBXBuildFile section */
@@ -98,6 +102,9 @@
 		99D59F6D1A246EC8006D9447 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 		99D59F701A24B7B4006D9447 /* CustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLabel.h; sourceTree = "<group>"; };
 		99D59F711A24B7B4006D9447 /* CustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLabel.m; sourceTree = "<group>"; };
+		99D59F741A24BAD4006D9447 /* primary_keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = primary_keys.plist; sourceTree = "<group>"; };
+		99D59F771A24BB41006D9447 /* KeyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyManager.h; sourceTree = "<group>"; };
+		99D59F781A24BB41006D9447 /* KeyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyManager.m; sourceTree = "<group>"; };
 		CE792BDF01ABB3AD697B5CB0 /* libPods-MessageEase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MessageEase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -236,6 +243,9 @@
 				99D59F6D1A246EC8006D9447 /* CustomButton.m */,
 				99D59F701A24B7B4006D9447 /* CustomLabel.h */,
 				99D59F711A24B7B4006D9447 /* CustomLabel.m */,
+				99D59F741A24BAD4006D9447 /* primary_keys.plist */,
+				99D59F771A24BB41006D9447 /* KeyManager.h */,
+				99D59F781A24BB41006D9447 /* KeyManager.m */,
 			);
 			path = KeyboardView;
 			sourceTree = "<group>";
@@ -359,6 +369,7 @@
 				99A3162E1A24392500159958 /* Main.storyboard in Resources */,
 				99A316331A24392500159958 /* LaunchScreen.xib in Resources */,
 				99A316301A24392500159958 /* Images.xcassets in Resources */,
+				99D59F751A24BAD4006D9447 /* primary_keys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +384,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99D59F761A24BAD4006D9447 /* primary_keys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +467,7 @@
 				99A316281A24392500159958 /* AppDelegate.m in Sources */,
 				99A316251A24392500159958 /* main.m in Sources */,
 				99D59F721A24B7B4006D9447 /* CustomLabel.m in Sources */,
+				99D59F791A24BB41006D9447 /* KeyManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +486,7 @@
 				99D59F6F1A246EC8006D9447 /* CustomButton.m in Sources */,
 				99D59F691A2459E5006D9447 /* PadContainerView.m in Sources */,
 				99D59F671A2459E5006D9447 /* KeyboardView.m in Sources */,
+				99D59F7A1A24BB41006D9447 /* KeyManager.m in Sources */,
 				99D59F731A24B7B4006D9447 /* CustomLabel.m in Sources */,
 				99A316521A24393E00159958 /* KeyboardViewController.m in Sources */,
 				99D59F651A2459E5006D9447 /* AccessoryView.m in Sources */,

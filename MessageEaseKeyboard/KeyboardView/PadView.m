@@ -11,7 +11,7 @@
 
 #import <Masonry/Masonry.h>
 
-static NSInteger kPadding = 5;
+static NSInteger kPadding = 4;
 
 @interface PadView ()
 
@@ -71,7 +71,7 @@ static NSInteger kPadding = 5;
     [self addSubview:topRightLabel];
     [topRightLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mas_top).with.mas_offset(kPadding);
-        make.right.equalTo(self.mas_right).with.mas_offset(kPadding);
+        make.right.equalTo(self.mas_right).with.mas_offset(-kPadding);
     }];
 
     // Left
@@ -94,7 +94,7 @@ static NSInteger kPadding = 5;
     CustomLabel *rightLabel = [[CustomLabel alloc] init];
     [self addSubview:rightLabel];
     [rightLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self.mas_right).with.mas_offset(kPadding);
+        make.right.equalTo(self.mas_right).with.mas_offset(-kPadding);
         make.centerY.equalTo(self.mas_centerY);
     }];
 
@@ -102,7 +102,7 @@ static NSInteger kPadding = 5;
     CustomLabel *bottomLeftLabel = [[CustomLabel alloc] init];
     [self addSubview:bottomLeftLabel];
     [bottomLeftLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self.mas_bottom).with.mas_offset(kPadding);
+        make.bottom.equalTo(self.mas_bottom).with.mas_offset(-kPadding);
         make.left.equalTo(self.mas_left).with.mas_offset(kPadding);
     }];
 
@@ -110,7 +110,7 @@ static NSInteger kPadding = 5;
     CustomLabel *bottomLabel = [[CustomLabel alloc] init];
     [self addSubview:bottomLabel];
     [bottomLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self.mas_bottom).with.mas_offset(kPadding);
+        make.bottom.equalTo(self.mas_bottom).with.mas_offset(-kPadding);
         make.centerX.equalTo(self.mas_centerX);
     }];
 
@@ -118,13 +118,29 @@ static NSInteger kPadding = 5;
     CustomLabel *bottomRightLabel = [[CustomLabel alloc] init];
     [self addSubview:bottomRightLabel];
     [bottomRightLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self.mas_bottom).with.mas_offset(kPadding);
-        make.right.equalTo(self.mas_right).with.mas_offset(kPadding);
+        make.bottom.equalTo(self.mas_bottom).with.mas_offset(-kPadding);
+        make.right.equalTo(self.mas_right).with.mas_offset(-kPadding);
     }];
 
     self.labels = @[topLeftLabel, topLabel, topRightLabel,
                     leftLabel, middleLabel, rightLabel,
                     bottomLeftLabel, bottomLabel, bottomRightLabel];
+}
+
+#pragma mark - Touch
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    self.backgroundColor = [UIColor grayColor];
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    self.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    self.backgroundColor = [UIColor whiteColor];
 }
 
 @end

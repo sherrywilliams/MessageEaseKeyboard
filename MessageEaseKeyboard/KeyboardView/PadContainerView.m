@@ -10,6 +10,7 @@
 #import "PadView.h"
 
 #import <Masonry/Masonry.h>
+#import "KeyManager.h"
 
 static NSInteger kPadCount = 9;
 static NSInteger kPadPerRow = 3;
@@ -45,6 +46,8 @@ static NSInteger kPadPerRow = 3;
     NSMutableArray *pads = [NSMutableArray array];
     for (int i=0; i<kPadCount; ++i) {
         PadView *pad = [[PadView alloc] init];
+
+        [pad setTexts:[KeyManager sharedManager].padKeys[i]];
 
         [self addSubview:pad];
         [pads addObject:pad];
